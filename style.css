@@ -1,0 +1,403 @@
+:root {
+    --left: rgb(31, 39, 49);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    max-width: 1522px;
+    max-height: 700px;
+    border: 1px double rgb(160, 160, 190);
+}
+
+
+/* ****************************** left-contents start ************************************** */
+
+.container .left-contents {
+    width: 15%;
+    background-color: var(--left);
+    color: white;
+}
+
+
+/***** left-contents top-position *****/
+
+.container .left-contents img {
+    position: absolute;
+    width: 14.5%;
+    height: 160px;
+}
+
+.container .left-contents .name {
+    height: 23%;
+    background-color: rgba(31, 39, 49, 0.877);
+    position: relative;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.container .left-contents .name h4 {
+    font-weight: 400;
+}
+
+.container .left-contents .name p {
+    font-size: .7rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.788);
+    margin-bottom: 1rem;
+}
+
+.container .left-contents .name button {
+    padding: 5px 10px;
+    border: 1px solid rgba(235, 69, 69, 0.6);
+    font-size: .7rem;
+    background-color: rgba(128, 128, 128, 0.301);
+    color: white;
+}
+
+
+/****** left-contents center-position ******/
+
+.container .left-contents .content {
+    height: 72%;
+}
+
+.container .left-contents .content .item a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+.container .left-contents .content .item :hover {
+    color: black;
+    background-color: rgb(248, 248, 248);
+}
+
+.container .left-contents .content .item :focus {
+    color: black;
+    background-color: rgb(248, 248, 248);
+}
+
+.container .left-contents .content .item a span {
+    border-radius: 50%;
+    border: 2px solid rgba(129, 129, 129, 0.267);
+    padding: .2rem .4rem;
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+.container .left-contents .content .item a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/****** left-contents bottom-position ******/
+
+.container .footer {
+    height: 5%;
+    background-color: rgba(3, 15, 31, 0.877);
+    text-align: center;
+    padding-top: .6rem;
+}
+
+.container .footer a {
+    min-width: auto;
+    color: gray;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+
+/* ****************************** left-contents end ************************************** */
+
+
+/* ****************************** center-contents start ************************************** */
+
+.container .center-contents {
+    background-color: rgb(248, 248, 248);
+    width: 25%;
+    height: 698px;
+    padding: .7rem .5rem 0 .7rem;
+}
+
+.container .center-contents .navbar ul {
+    text-decoration-style: none;
+    list-style-type: none;
+    display: flex;
+    font-size: .9rem;
+    padding: .7rem 1rem 0 .7rem;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.container .center-contents .navbar ul li {
+    padding: 0 1rem 1rem 0;
+}
+
+.container .center-contents .navbar ul li a {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+
+.container .center-contents .navbar ul li :hover {
+    border-bottom: 2px solid rgb(245, 74, 7);
+    padding-bottom: 1rem;
+    transition: .2s;
+}
+
+.container .center-contents .navbar ul li :focus {
+    border-bottom: 3px solid rgb(245, 74, 7);
+    padding-bottom: 1rem;
+    transition: .2s;
+}
+
+.center-contents .content .con div h5 {
+    font-size: .8rem;
+    font-weight: bolder;
+}
+
+.container .center-contents .content .con div p {
+    padding-top: .4rem;
+    font-size: .7rem;
+}
+
+.container .center-contents .content {
+    overflow-y: auto;
+    height: 91%;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: .3rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(214, 214, 214);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(245, 74, 7);
+}
+
+.container .center-contents .content .con {
+    font-size: .6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem .5rem 1rem 1rem;
+    margin-right: .5rem;
+    color: gray;
+}
+
+.container .center-contents .content :hover {
+    background-color: rgb(245, 74, 7);
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+/* ****************************** center-contents end ************************************** */
+
+
+/* ****************************** right-contents start ************************************** */
+
+.container .right-contents {
+    margin: 0 1rem;
+    width: 60%;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: .7rem;
+    line-height: 1.5rem;
+}
+
+.container .right-contents .well {
+    margin: .6rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .right-contents .well .media a {
+    font-size: .5rem;
+    padding: .4rem .5rem;
+    margin: .2rem;
+    border-radius: 50%;
+    border: 2px solid rgb(231, 231, 231);
+    color: rgb(229, 229, 229);
+}
+
+.container .right-contents .well a:hover {
+    background-color: rgb(245, 74, 7);
+    color: white;
+}
+
+.container .right-contents .well a:active {
+    background-color: rgb(226, 85, 29);
+    color: rgb(245, 245, 245);
+}
+
+.container .right-contents .well .search input {
+    font-size: .6rem;
+    padding: .7rem;
+    border-style: none;
+}
+
+.container .right-contents .well .search {
+    border: 1px solid rgb(245, 242, 242);
+    padding: 0 .3rem 0 0;
+    color: rgb(216, 216, 216);
+}
+
+.container .right-contents .logo {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(241, 238, 238);
+    border-bottom: 1px solid rgb(241, 238, 238);
+}
+
+.container .right-contents .logo .logo1 {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgb(221, 217, 217, .5);
+    line-height: 1rem;
+}
+
+.container .right-contents .logo .logo1 img {
+    border-radius: 50%;
+}
+
+.container .right-contents .logo .logo1 div {
+    margin: 0 .9rem;
+}
+
+.container .right-contents .logo .logo1 p {
+    font-weight: 200;
+    font-size: .5rem;
+    color: rgb(16, 16, 68);
+}
+
+.container .right-contents .logo .logo1 h4 {
+    font-weight: 400;
+    font-size: .7rem;
+    color: rgb(16, 16, 68);
+}
+
+.container .right-contents .logo .logo2 {
+    margin-left: 1rem;
+}
+
+.container .right-contents .logo .logo2 p {
+    font-weight: 200;
+    color: rgb(16, 16, 68);
+    font-size: .5rem;
+}
+
+.container .right-contents .logo .logo3 p {
+    font-weight: 200;
+    color: rgb(16, 16, 68);
+    font-size: .5rem;
+}
+
+.container .right-contents .logo .logo2 h3 {
+    font-weight: 400;
+    color: rgb(16, 16, 68);
+}
+
+.container .right-contents .logo .logo3 {
+    margin-left: rem;
+}
+
+.container .right-contents .content .info p {
+    margin-top: 1rem;
+    color: gray;
+}
+
+.container .right-contents .content .info div {
+    margin-top: 1rem;
+    color: gray;
+}
+
+.container .right-contents .content .info .con p {
+    margin-top: .4rem;
+}
+
+.container .right-contents .content .info .con2 p {
+    margin-top: 0;
+}
+
+.container .right-contents .file {
+    color: gray;
+    margin: 2rem 0;
+    font-size: rem;
+    padding: .2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(235, 232, 232);
+    border-bottom: 1px solid rgb(235, 232, 232);
+}
+
+.container .right-contents .file .file-item2 a {
+    padding: .3rem;
+    color: rgb(216, 216, 216);
+    border-radius: 50%;
+    border: 1px solid rgb(235, 232, 232);
+}
+
+.container .right-contents .file .file-item2 :hover {
+    background-color: rgb(245, 74, 7);
+    color: white;
+}
+
+.container .right-contents .file .file-item2 :active {
+    background-color: rgb(226, 85, 29);
+    color: white;
+}
+
+.container .right-contents .text-box {
+    color: gray;
+}
+
+.container .right-contents .text-box .text-item-1 textarea {
+    border-style: none;
+    height: 100px;
+    width: 100%;
+    color: gray;
+    font-size: .7rem;
+}
+
+.container .right-contents .text-box .text-item-1 {
+    border: 1px solid rgb(238, 237, 237);
+}
+
+.container .right-contents .text-box .text-item-2 {
+    text-align: end;
+    margin: .4rem;
+}
+
+.container .right-contents .text-box .text-item-2 button {
+    padding: .3rem 1rem;
+    background-color: rgb(245, 74, 7);
+    color: white;
+    border-style: none;
+}
+
+.container .right-contents .text-box .text-item-2 :hover {
+    background-color: rgb(206, 21, 21);
+}
+
+.container .right-contents .text-box .text-item-2 :active {
+    background-color: red;
+}
+
+
+/* ****************************** right-contents end ************************************** */
